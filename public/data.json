@@ -1,0 +1,77 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/mhcR3h4/img-1.png",
+      "title": "Introduction to C Programming",
+      "description": "C programming is a versatile and widely-used programming language known for its simplicity, efficiency, and portability.",
+      "price": 15000,
+      "reading_time": "8"
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/8jckrr5/img-2.png.jpg",
+      "title": "Introduction to Algorithms",
+      "description": "Introduction to Algorithms is a widely used and respected textbook in the field of computer science and algorithms.",
+      "price": 25000,
+      "reading_time": "2"
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/Gddbhps/img-3.png",
+      "title": "Introduction to C++ for DSA",
+      "description": "C++ DSA is an essential subject in computer science that focuses on implementing various Data Structures and Algorithms in C++.",
+      "price": 10000,
+      "reading_time": "10"
+    },
+  {
+      "id": 4,
+      "img": "https://i.ibb.co/QkbzCtn/img-4.png",
+      "title": "Basic Data Structures",
+      "description": "Basic data structures are fundamental building blocks in computer science and programming.",
+      "price": 35000,
+      "reading_time": "5"
+    },{
+      "id": 5,
+      "img": "https://i.ibb.co/DMLBvQ2/img-5.png",
+      "title": "Introduction to OOP Python ",
+      "description": "In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming.",
+      "price": 19000,
+      "reading_time": "5"
+    },{
+      "id": 6,
+      "img": "https://i.ibb.co/0Jq4s5B/img-6.png",
+      "title": "Software Engineering",
+      "description": "A software engineer is a person who applies the engineering design process to design, develop, maintain, test, and evaluate computer software.",
+      "price": 23000,
+      "reading_time": "2"
+    },{
+      "id": 7,
+      "img": "https://i.ibb.co/285n16D/img-7.png",
+      "title": "AWS, Cloud Computing",
+      "description": "Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing.",
+      "price": 35000,
+      "reading_time": "5"
+    },
+  {
+      "id": 8,
+      "img": "https://i.ibb.co/qDmmB9z/img-8.png",
+      "title": "Database (MySQL)",
+      "description": "MySQL HeatWave is a fully managed database service for transactions, real ... MySQL Cluster enables users to meet the database challenges of next generation.",
+      "price": 19000,
+      "reading_time": "5"
+    },{
+      "id": 9,
+      "img": "https://i.ibb.co/wcSkdQG/img-9.png",
+      "title": "Problem-Solving Part",
+      "description": "Learn the four steps in the problem-solving process so you can understand and resolve the issues confronting your organization.",
+      "price": 23000,
+      "reading_time": "2"
+    }
+  ]
+  
+  
+  
+  
+  
+  
+  
