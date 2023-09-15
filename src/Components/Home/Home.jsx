@@ -43,9 +43,9 @@ const Home = () => {
       cart.forEach((priceTotal)=>{
         prices = prices+priceTotal.price
       })
-      
       const totalRemaining = 20 - count
-      if(totalTime>=20){
+      
+      if(totalRemaining < 0){
         return toast.warn('Exist Your Credit Hour', {
           position: "top-right",
           autoClose: 5000,
@@ -57,6 +57,7 @@ const Home = () => {
           theme: "light",
           });
       }
+
       setTotalPrice(prices);
       setTotalTime(count)
       setRemaining(totalRemaining)
