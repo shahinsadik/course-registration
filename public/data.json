@@ -5,7 +5,7 @@
       "title": "Introduction to C Programming",
       "description": "C programming is a versatile and widely-used programming language known for its simplicity, ef...",
       "price": 15000,
-      "reading_time": "8"
+      "reading_time": 8
     },
     {
       "id": 102,
@@ -13,7 +13,7 @@
       "title": "Introduction to Algorithms",
       "description": "Introduction to Algorithms is a widely used and respected textbook in the field of computer sc...",
       "price": 25000,
-      "reading_time": "2"
+      "reading_time": 2
     },
     {
       "id": 103,
@@ -21,7 +21,7 @@
       "title": "Introduction to C++ for DSA",
       "description": "C++ DSA is an essential subject in computer science that focuses on implementing various Data...",
       "price": 10000,
-      "reading_time": "10"
+      "reading_time": 10
     },
   {
       "id": 104,
@@ -29,28 +29,28 @@
       "title": "Basic Data Structures",
       "description": "Basic data structures are fundamental building blocks in computer science and programming...",
       "price": 35000,
-      "reading_time": "5"
+      "reading_time": 5
     },{
       "id": 105,
       "img": "https://i.ibb.co/DMLBvQ2/img-5.png",
       "title": "Introduction to OOP Python ",
       "description": "In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and ...",
       "price": 19000,
-      "reading_time": "5"
+      "reading_time": 5
     },{
       "id": 106,
       "img": "https://i.ibb.co/0Jq4s5B/img-6.png",
       "title": "Software Engineering",
       "description": "A software engineer is a person who applies the engineering design process to design, develop ...",
       "price": 23000,
-      "reading_time": "2"
+      "reading_time": 2
     },{
       "id": 107,
       "img": "https://i.ibb.co/285n16D/img-7.png",
       "title": "AWS, Cloud Computing",
       "description": "Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go ...",
       "price": 35000,
-      "reading_time": "5"
+      "reading_time": 5
     },
   {
       "id": 108,
@@ -58,14 +58,14 @@
       "title": "Database (MySQL)",
       "description": "MySQL HeatWave is a fully managed database service for transactions, real. MySQL Cluster enables...",
       "price": 19000,
-      "reading_time": "5"
+      "reading_time": 5
     },{
       "id": 109,
       "img": "https://i.ibb.co/wcSkdQG/img-9.png",
       "title": "Problem-Solving Part",
       "description": "Learn the four steps in the problem-solving process so you can understand and resolve the issues ...",
       "price": 23000,
-      "reading_time": "2"
+      "reading_time": 2
     }
   ]
   
