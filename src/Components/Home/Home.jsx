@@ -6,6 +6,7 @@ import Card from "../Card/Card";
 
 const Home = () => {
   const [allRegistration, setAllRegistration] = useState([]);
+  const [cart, setCart]= useState([])
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
@@ -13,8 +14,13 @@ const Home = () => {
   }, []);
 
   const handleRegistration = (registration) => {
-    setAllRegistration([...allRegistration, registration]);
-    // console.log(allRegistration);
+    const isCourseInCart = cart.some((item) => item.id === registration.id);
+
+    if (isCourseInCart) {
+      alert(`Already "${registration.title}" is selected in the cart.`);
+    } else {
+      setCart([...cart, registration]);
+    }
     
   };
 
@@ -34,7 +40,7 @@ const Home = () => {
                      alt=""
                    />
                  </div>
-                 <div>
+                 <div>  
                  
                    <h1 className="text-lg font-semibold my-3">
                    {registration.title}
@@ -44,7 +50,7 @@ const Home = () => {
                    </p>
                    <div className="flex justify-between text-gray-600 font-medium  px-2 my-3">
                      <p>Price: {registration.price}</p>
-                     <p className="">Credit:{registration.reading_time} hrs</p>
+                     <p className="">Credit: {registration.reading_time} hrs</p>
                    </div>
                    <button onClick={()=>handleRegistration(registration)} className="bg-[#2F80ED] text-lg font-medium p-2 rounded-lg w-full text-white">
                      Select
@@ -54,10 +60,10 @@ const Home = () => {
                )
               }
             </div>
-          <div className="bg-white shadow-xl  rounded-xl p-3">
+          <div className="bg-white shadow-xl  rounded-xl p-3 w-1/4">
             
                   <Card
-                  allRegistration={allRegistration}
+                  cart={cart}
                   ></Card>
           </div>
         </div>
