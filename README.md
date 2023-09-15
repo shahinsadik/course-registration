@@ -41,4 +41,4 @@ Make sure you have the following software installed on your system:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/course-registration-web.git
+   git code link: https://github.com/programming-hero-web-course2/my-course-roster-shahinsadik.git

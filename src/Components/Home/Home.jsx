@@ -2,6 +2,9 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import Card from "../Card/Card";
+import { BsCurrencyDollar, BsBook } from 'react-icons/bs';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Home = () => {
@@ -21,7 +24,16 @@ const Home = () => {
     let count = registration.reading_time;
     let prices = registration.price
     if (isExist) {
-      return alert(`Already "${registration.title}" is selected in the cart.`);
+      return toast.warn('Already Selected', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
     } 
     else {
       cart.forEach((registration)=>{
@@ -34,7 +46,16 @@ const Home = () => {
       
       const totalRemaining = 20 - count
       if(totalTime>=20){
-        return alert("Credit Hour Remaining Now 0 hrs")
+        return toast.warn('Exist Your Credit Hour', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
       }
       setTotalPrice(prices);
       setTotalTime(count)
@@ -50,8 +71,8 @@ const Home = () => {
     <div>
       <h1 className="text-3xl my-5 font-bold text-center">Course Registration</h1>
       <div>
-        <div className="flex gap-5">
-        <div className="grid grid-cols-1 lg:grid-cols-3 w-3/4 gap-5">
+        <div className="flex lg:flex-row flex-col gap-5">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:w-3/4 gap-5 mx-2">
             {
                allRegistration.map(registration=>
                <div key={registration.id} className="bg-white shadow-xl  rounded-xl p-3">
@@ -71,18 +92,19 @@ const Home = () => {
                      {registration.description}
                    </p>
                    <div className="flex justify-between text-gray-600 font-medium  px-2 my-3">
-                     <p>Price: {registration.price}</p>
-                     <p className="">Credit: {registration.reading_time} hrs</p>
+                     <p><BsCurrencyDollar className="inline ml-1"></BsCurrencyDollar> Price: {registration.price}</p>
+                     <p className=""><BsBook className="inline mr-1"></BsBook>Credit: {registration.reading_time} hrs</p>
                    </div>
                    <button onClick={()=>handleRegistration(registration)} className="bg-[#2F80ED] text-lg font-medium p-2 rounded-lg w-full text-white">
                      Select
-                   </button>
+                   </button><ToastContainer />
                  </div>
                </div>
                )
               }
+              
             </div>
-          <div className=" w-1/4">
+          <div className=" mx-2 lg:w-1/4 mb-3">
             
             <div className="bg-white shadow-xl  rounded-xl p-3">
             <Card
